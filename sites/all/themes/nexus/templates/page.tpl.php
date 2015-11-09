@@ -107,7 +107,7 @@
         <img src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/Star-Wars.jpg'; ?>"/>
         <?php if($slide1_head || $slide1_desc) : ?>
           <div class="flex-caption">
-            <h2><?php print $slide1_head; ?></h2><?php print $slide1_desc; ?>
+            <h2 id="movie-slide-header"><?php print $slide1_head; ?></h2><?php print $slide1_desc; ?>
             <a class="frmore" href="<?php print url($slide1_url); ?>"> <?php print t('Movies'); ?> </a>
           </div>
         <?php endif; ?>
@@ -116,7 +116,7 @@
         <img src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/Game-of-Thrones.jpg'; ?>"/>
         <?php if($slide2_head || $slide2_desc) : ?>
           <div class="flex-caption">
-            <h2><?php print $slide2_head; ?></h2><?php print $slide2_desc; ?>
+            <h2 id="tv-slide-header"><?php print $slide2_head; ?></h2><?php print $slide2_desc; ?>
             <a class="frmore" href="<?php print url($slide2_url); ?>"> <?php print t('TV Shows'); ?> </a>
           </div>
         <?php endif; ?>
@@ -125,7 +125,7 @@
         <img src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/Harry-Potter.jpg'; ?>"/>
         <?php if($slide3_head || $slide3_desc) : ?>
           <div class="flex-caption">
-            <h2><?php print $slide3_head; ?></h2><?php print $slide3_desc; ?>
+            <h2 id="literature-slide-header"><?php print $slide3_head; ?></h2><?php print $slide3_desc; ?>
             <a class="frmore" href="<?php print url($slide3_url); ?>"> <?php print t('Books'); ?> </a>
           </div>
         <?php endif; ?>

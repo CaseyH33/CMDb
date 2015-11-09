@@ -1178,3 +1178,22 @@ header#masthead {
   background: url("../../images/theater-seats-banner.jpg");
   background-size: cover;
 }
+
+h2#movie-slide-header {
+  font-family: 'SFDistantGalaxyAlternate-It';
+  color: black;
+}
+
+h2#tv-slide-header {
+  font-family: 'game-of-thrones';
+  color: black;
+}
+
+h2#literature-slide-header {
+  font-family: 'harry-potter';
+  color: black;
+}
+
+/*.flex-caption h2 a:link, .flex-caption h2 a:visited{
+  color: #fff;
+}*/
