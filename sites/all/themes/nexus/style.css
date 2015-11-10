@@ -1182,18 +1182,70 @@ header#masthead {
 h2#movie-slide-header {
   font-family: 'SFDistantGalaxyAlternate-It';
   color: black;
+  font-size: 6em;
 }
 
 h2#tv-slide-header {
   font-family: 'game-of-thrones';
   color: black;
+  font-size: 4em;
 }
 
 h2#literature-slide-header {
   font-family: 'harry-potter';
   color: black;
+  font-size: 6em;
 }
 
-/*.flex-caption h2 a:link, .flex-caption h2 a:visited{
-  color: #fff;
-}*/
+.slide-description {
+  color: black;
+  text-shadow: 1px 1px 2px white;
+}
+
+body.page-movies h1.page-title {
+  font-family: 'cinema_st';
+  font-size: 7em;
+}
+
+body.page-tv-shows h1.page-title {
+  font-family: 'battlestar';
+  /*font-family: 'dead-font-walking';*/
+  font-size: 5em;
+}
+
+body.page-books h1.page-title {
+  font-family: 'typewriter';
+  font-size: 6em;
+}
+
+
+
+/*Books
+Fiction: corleone
+Non-fiction: steadman
+Graphic Novels: sin-city*/
+
+/*Movies:
+Action/Adventure: jurassic-park
+Anime: dbz
+Animated: disney
+Classic: GatsbyFLF-Bold
+Comedy: grand-hotel
+Comic Book: tmnt
+Crime/Gangster: road-to-perdition
+Drama: schindler
+Fantasy: lotr
+Favorite: shaun
+Foreign: ????
+Holiday: nightmare-before-christmas
+Horror: 28-days-later
+Kids: goonies
+Musical: rocky-horror
+Sci-Fi: blade-runner
+Sports: fnl
+Romance: LaBelleAurore
+Thriller: tarantino
+War: apocalypse-now
+Western: cowboy*/
+
+/*Used: Star Wars, Indiana Jones, Game of Thrones, Harry Potter, Battlestar Galactica, Typewrite, Cinema*/

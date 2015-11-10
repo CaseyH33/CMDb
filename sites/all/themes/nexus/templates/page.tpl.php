@@ -97,9 +97,12 @@
   <?php if ($is_front): ?>
   <?php if (theme_get_setting('slideshow_display','nexus')): ?>
   <?php
-    $slide1_head = check_plain(theme_get_setting('slide1_head','nexus'));   $slide1_desc = check_markup(theme_get_setting('slide1_desc','nexus'), 'full_html'); $slide1_url = check_plain(theme_get_setting('slide1_url','nexus'));
-    $slide2_head = check_plain(theme_get_setting('slide2_head','nexus'));   $slide2_desc = check_markup(theme_get_setting('slide2_desc','nexus'), 'full_html'); $slide2_url = check_plain(theme_get_setting('slide2_url','nexus'));
-    $slide3_head = check_plain(theme_get_setting('slide3_head','nexus'));   $slide3_desc = check_markup(theme_get_setting('slide3_desc','nexus'), 'full_html'); $slide3_url = check_plain(theme_get_setting('slide3_url','nexus'));
+    $slide1_head = check_plain(theme_get_setting('slide1_head','nexus'));   $slide1_desc = check_markup(theme_get_setting('slide1_desc','nexus'), 'full_html');  $slide1_url = "movies";
+    // $slide1_url = check_plain(theme_get_setting('slide1_url','nexus'));
+    $slide2_head = check_plain(theme_get_setting('slide2_head','nexus'));   $slide2_desc =  check_markup(theme_get_setting('slide2_desc','nexus'), 'full_html');  $slide2_url = "tv-shows";
+    // $slide2_url = check_plain(theme_get_setting('slide2_url','nexus'));
+    $slide3_head = check_plain(theme_get_setting('slide3_head','nexus'));   $slide3_desc = check_markup(theme_get_setting('slide3_desc','nexus'), 'full_html');   $slide3_url = "books";
+    // $slide3_url = check_plain(theme_get_setting('slide3_url','nexus'));
   ?>
   <div id="slidebox" class="flexslider">
     <ul class="slides">
@@ -107,7 +110,7 @@
         <img src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/Star-Wars.jpg'; ?>"/>
         <?php if($slide1_head || $slide1_desc) : ?>
           <div class="flex-caption">
-            <h2 id="movie-slide-header"><?php print $slide1_head; ?></h2><?php print $slide1_desc; ?>
+            <h2 id="movie-slide-header"><?php print $slide1_head; ?></h2><div class="slide-description"><?php print $slide1_desc; ?></div>
             <a class="frmore" href="<?php print url($slide1_url); ?>"> <?php print t('Movies'); ?> </a>
           </div>
         <?php endif; ?>
@@ -116,7 +119,7 @@
         <img src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/Game-of-Thrones.jpg'; ?>"/>
         <?php if($slide2_head || $slide2_desc) : ?>
           <div class="flex-caption">
-            <h2 id="tv-slide-header"><?php print $slide2_head; ?></h2><?php print $slide2_desc; ?>
+            <h2 id="tv-slide-header"><?php print $slide2_head; ?></h2><div class="slide-description"><?php print $slide2_desc; ?></div>
             <a class="frmore" href="<?php print url($slide2_url); ?>"> <?php print t('TV Shows'); ?> </a>
           </div>
         <?php endif; ?>
@@ -125,7 +128,7 @@
         <img src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/Harry-Potter.jpg'; ?>"/>
         <?php if($slide3_head || $slide3_desc) : ?>
           <div class="flex-caption">
-            <h2 id="literature-slide-header"><?php print $slide3_head; ?></h2><?php print $slide3_desc; ?>
+            <h2 id="literature-slide-header"><?php print $slide3_head; ?></h2><div class="slide-description"><?php print $slide3_desc; ?></div>
             <a class="frmore" href="<?php print url($slide3_url); ?>"> <?php print t('Books'); ?> </a>
           </div>
         <?php endif; ?>

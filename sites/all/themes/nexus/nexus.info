@@ -39,7 +39,7 @@ settings[slide3_head]  = "Books"
 settings[slide1_desc]  = "Click here to check out the movie collection"
 settings[slide2_desc]  = "Click here to check out television series"
 settings[slide3_desc]  = "Click here to check out books"
-settings[slide1_url]  = "node/1"
+settings[slide1_url]  = "movies"
 settings[slide2_url]  = "node/2"
 settings[slide3_url]  = "node/3"
 ; Information added by drupal.org packaging script on 2013-09-08
